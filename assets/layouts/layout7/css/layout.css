@@ -3,7 +3,12 @@
 /*--------------------------------------------------
     [Container]
 ----------------------------------------------------*/
+
 .page-container-bg-solid { }
+
+.page-container-bg-solid {
+  background: #EFF1F9 !important; }
+
 
 .container-lf-space {
   padding-left: 30px;

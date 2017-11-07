@@ -5801,7 +5801,8 @@ Form Layouts
 
 .portlet-form .form-body,
 .form .form-body {
-  padding: 20px; }
+  padding: 20px; 
+padding-left: 250px}
   .portlet.light .portlet-form .form-body, .portlet.light
   .form .form-body {
     padding-left: 0;

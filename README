@@ -1,2 +1,5 @@
 Modify your named file
-To pull template code/see what's possible, go into the template folder -> theme, admin_4 or admin_7. Load up the html file in a web page. Find the element you're looking for, like a button, then pull that HTML code and put it directly into your file.
+
+Core File: P5_Final
+
+To run the website: start at index.thml

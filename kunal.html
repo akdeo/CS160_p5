@@ -285,7 +285,7 @@
         <!-- END THEME LAYOUT SCRIPTS -->
         <script>
             var counter = 0;
-            var content = ["That’s ridiculous! The Warriors won 97-80 in their last game against Miami Heat", "Look at the chicago bulls or the Lakers", "Do you watch that much basketball?", "I'm a basketball God!!!!!!!!"]
+            var content = ["That’s ridiculous! The Warriors won 97-80 in their last game against Miami Heat. What have the Laker's done lately?", "They've won the last 2/3 NBA Titles. The Lakers haven't even made it to the playoffs since 2008!", "Do you watch that much basketball?", "I'm a basketball God!!!!!!!!"]
             
             $(document).ready(function()
             {
@@ -300,9 +300,22 @@
         
         if (code == 13) {
             $( "#chat" ).append( '<br><div class ="col-md-12" style ="text-align:right;margin-right:0px;padding-right:0px;;margin-top:10px">'+$("#txt").val() +'<span style ="color:#e74c3c"> :Emily</span></div>' );
-            $( "#chat" ).append( '<br> <div class ="col-md-8" style ="float:left;background-color:#ecf0f1;margin-top:10px"><span style ="color:#2ecc71">Kunal: </span>'+content[counter % content.length] +'</div>' );
-            counter += 1
             $("#txt").val('')
+            
+            setTimeout(function(){ $( "#chat" ).append( '<br> <div class ="col-md-8" id = "dots" style ="float:left;background-color:#ecf0f1;margin-top:10px"><span style ="color:#2ecc71">Kunal: </span>'+ 'Kunal is typing...' +'</div>' );
+                                  
+            setTimeout(function(){ 
+            $("#dots").remove()
+            $( "#chat" ).append( '<br> <div class ="col-md-8" style ="float:left;background-color:#ecf0f1;margin-top:10px"><span style ="color:#2ecc71">Kunal: </span>'+content[counter % content.length] +'</div>' );
+            counter += 1}, 4000);
+                  
+            }, 3000);
+            
+   
+            
+            
+            
+            
         }
     });
 });

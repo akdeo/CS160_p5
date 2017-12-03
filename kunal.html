@@ -120,7 +120,7 @@
                                 <div class="display">
                                     <div class="number">
                                         <h3 class="" style ="margin-left:50px;margin-top:8px;color:#2ecc71">
-                                           Yes: Kunal
+                                           Yes: Purva
                                         </h3>
                                         <small></small>
                                     </div>
@@ -148,7 +148,7 @@
                                 <div class="display">
                                     <div class="number">
                                         <h3 class="font-red-haze" style ="margin-left:60px;margin-top:8px">
-                                            No: Emily
+                                            No: Shanaaz
                                         </h3>
                                         
                                     </div>
@@ -177,11 +177,11 @@
                                         <br/>
                                         <br/>
                                         
-                                        <div class ="col-md-12" style ="float:left;;margin-top:10px"><span style ="color:#2ecc71">Kunal </span> and <span style ="color:#e74c3c">Emily </span> have joined the chat.</div>
+                                        <div class ="col-md-12" style ="float:left;;margin-top:10px"><span style ="color:#2ecc71">Purva </span> and <span style ="color:#e74c3c">Shanaaz </span> have joined the chat.</div>
                           
                                         
 
-                                        <div class ="col-md-8" style ="float:left;background-color:#ecf0f1;margin-top:10px"><span style ="color:#2ecc71">Kunal: </span>Hey! I think the warriors are the best team in the NBA.</div>
+                                        <div class ="col-md-8" style ="float:left;background-color:#ecf0f1;margin-top:10px"><span style ="color:#2ecc71">Purva: </span>Hey! I think the warriors are the best team in the NBA.</div>
                                         
                                         
                                        
@@ -299,14 +299,14 @@
         var code = (e.keyCode ? e.keyCode : e.which);
         
         if (code == 13) {
-            $( "#chat" ).append( '<br><div class ="col-md-12" style ="text-align:right;margin-right:0px;padding-right:0px;;margin-top:10px">'+$("#txt").val() +'<span style ="color:#e74c3c"> :Emily</span></div>' );
+            $( "#chat" ).append( '<br><div class ="col-md-12" style ="text-align:right;margin-right:0px;padding-right:0px;;margin-top:10px">'+$("#txt").val() +'<span style ="color:#e74c3c"> :Shanaaz</span></div>' );
             $("#txt").val('')
             
-            setTimeout(function(){ $( "#chat" ).append( '<br> <div class ="col-md-8" id = "dots" style ="float:left;background-color:#ecf0f1;margin-top:10px"><span style ="color:#2ecc71">Kunal: </span>'+ 'Kunal is typing...' +'</div>' );
+            setTimeout(function(){ $( "#chat" ).append( '<br> <div class ="col-md-8" id = "dots" style ="float:left;background-color:#ecf0f1;margin-top:10px"><span style ="color:#2ecc71">Purva: </span>'+ 'Purva is typing...' +'</div>' );
                                   
             setTimeout(function(){ 
             $("#dots").remove()
-            $( "#chat" ).append( '<br> <div class ="col-md-8" style ="float:left;background-color:#ecf0f1;margin-top:10px"><span style ="color:#2ecc71">Kunal: </span>'+content[counter % content.length] +'</div>' );
+            $( "#chat" ).append( '<br> <div class ="col-md-8" style ="float:left;background-color:#ecf0f1;margin-top:10px"><span style ="color:#2ecc71">Purva: </span>'+content[counter % content.length] +'</div>' );
             counter += 1}, 4000);
                   
             }, 3000);

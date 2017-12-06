@@ -134,7 +134,7 @@
                                 <div class="display">
                                     <div class="number">
                                         <h3 class="font-blue-sharp" style ="margin-left:48px;margin-top:8px">
-                                            98% Similar
+                                            90% Similar
                                         </h3>
                                         
                                     </div>
@@ -250,6 +250,94 @@
                 </div>
                 <!-- END CONTENT BODY -->
             </div>
+<div class="modal fade bs-modal-lg" id="large" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" style ="width:1200px;height:1000px">
+                                            <div class="modal-content" style ="height:600px">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                                    <h4 class="modal-title" style ="font-size:24px;text-align:center">Shanaaz and Purva are <span style ="color:green">90% </span>Similar</h4>
+                                                </div>
+                                                <div class="modal-body"> 
+                                                    <div class ="col-md-8">
+                                                        <h1 style ="text-align:center">Similarities</h1>
+                                        <button class="portlet solid purple" id ="attkunal" style = "height:100px;width:250px;text-align:center;margin-top:20px;margin-left:100px">
+                                                <div class="portlet-title" style ="text-align:center">
+                                                    <div class="caption" style="font-size:20px;margin-left:20px;margin-top:10px">
+                                                        <i class="fa fa-globe"></i>Location: California </div>
+                                                    
+                                                </div>
+                                               
+                                        </button>
+                                        <button class="portlet solid purple" id ="attkunal" style = "height:100px;width:250px;text-align:center;margin-top:-10px;margin-left:100px">
+                                                <div class="portlet-title" style ="text-align:center">
+                                                    <div class="caption" style="font-size:20px;margin-left:20px;margin-top:10px">
+                                                        <i class="fa fa-money"></i>Socio-Economic: Middle-Class </div>
+                                                    
+                                                </div>
+                                               
+                                        </button>
+                                        <button class="portlet solid purple" id ="attkunal" style = "height:100px;width:250px;text-align:center;margin-top:px;margin-left:100px">
+                                                <div class="portlet-title" style ="text-align:center">
+                                                    <div class="caption" style="font-size:20px;margin-left:60px;margin-top:10px">
+                                                        <i class="fa fa-user"></i>Age: 25-35</div>
+                                                    
+                                                </div>
+                                               
+                                        </button>
+                                        <button class="portlet solid purple" id ="attkunal" style = "height:100px;width:250px;text-align:center;margin-top:px;margin-left:100px">
+                                                <div class="portlet-title" style ="text-align:center">
+                                                    <div class="caption" style="font-size:20px;margin-left:40px;margin-top:10px">
+                                                        <i class="fa fa-gavel"></i>Politics: Liberal</div>
+                                                    
+                                                </div>
+                                               
+                                        </button>
+                                                         <button class="portlet solid purple" id ="attkunal" style = "height:100px;width:250px;text-align:center;margin-top:px;margin-left:100px">
+                                                <div class="portlet-title" style ="text-align:center">
+                                                    <div class="caption" style="font-size:20px;margin-left:40px;margin-top:10px">
+                                                        <i class="fa fa-pencil"></i>Status: Student</div>
+                                                    
+                                                </div>
+                                               
+                                        </button>
+                                                         <button class="portlet solid purple" id ="attkunal" style = "height:100px;width:250px;text-align:center;margin-top:px;margin-left:100px">
+                                                <div class="portlet-title" style ="text-align:center">
+                                                    <div class="caption" style="font-size:20px;margin-left:40px;margin-top:10px">
+                                                        <i class="fa fa-user"></i>Race: Asian</div>
+                                                    
+                                                </div>
+                                               
+                                        </button>
+                                                    </div>
+                                                    
+                                                    <div class ="col-md-4">
+                                                        <h1 style ="text-align:center">Differences</h1>
+                                                        <button class="portlet solid red" id ="attkunal" style = "height:100px;width:250px;text-align:center;margin-top:20px;margin-left:50px">
+                                                <div class="portlet-title" style ="text-align:center">
+                                                    <div class="caption" style="font-size:20px;margin-left:70px;margin-top:10px">
+                                                        <i class="fa fa-user"></i>Religion</div>
+                                                    
+                                                </div>
+                                               
+                                        </button>
+                                                    </div>
+                                                    
+                                                    
+                                                
+                                                
+                                                
+                                                </div>
+<!--
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn dark btn-outline" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn green">Save changes</button>
+                                                </div>
+-->
+                                            </div>
+                                            <!-- /.modal-content -->
+                                        </div>
+                                        <!-- /.modal-dialog -->
+                                    </div>
 
             <!-- END QUICK SIDEBAR -->
  
@@ -285,10 +373,11 @@
         <!-- END THEME LAYOUT SCRIPTS -->
         <script>
             var counter = 0;
-            var content = ["That’s ridiculous! The Warriors won 97-80 in their last game against Miami Heat. What have the Laker's done lately?", "They've won the last 2/3 NBA Titles. The Lakers haven't even made it to the playoffs since 2008!", "Do you watch that much basketball?", "I'm a basketball God!!!!!!!!"]
+            var content = ["I think the warriors are amazing! Who do you think is better than the warriors?", "Hmm...That's an interesting thought. I think the warriors are the best because they won the NBA finals last year. Why is your team better?", "Ok, I kinda see where you're coming from. I think with Steph and Durant tho, they are gonna kill it in the future. ", "You know what, I think you've convinced me. Warriors suck!"]
             
             $(document).ready(function()
             {
+                   $('#large').modal('toggle');
                 $('#clickmewow').click(function()
                 {
                     $('#radio1003').attr('checked', 'checked');
